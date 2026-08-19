@@ -1,6 +1,6 @@
 # BlinkMoney – Gamified Gold Forge & Squad Vaults 🚀
 
-[![Branch: feat/UI](https://img.shields.io/badge/git%20branch-feat%2FUI-brightgreen.svg)](https://github.com/your-repo/BlinkMoney)
+[![Branch: main](https://img.shields.io/badge/git%20branch-main-brightgreen.svg)](https://github.com/drashti5901/BlinkMoney)
 [![TypeScript: Strict](https://img.shields.io/badge/TypeScript-Strict%20Mode-blue.svg)](https://www.typescriptlang.org/)
 [![React Native: 0.87](https://img.shields.io/badge/React%20Native-0.87-black.svg)](https://reactnative.dev/)
 [![Safe Area: Supported](https://img.shields.io/badge/Safe%20Area-Context%20v5-emerald.svg)](https://github.com/th3rdwave/react-native-safe-area-context)
