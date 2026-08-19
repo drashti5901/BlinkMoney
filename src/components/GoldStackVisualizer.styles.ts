@@ -1,0 +1,193 @@
+import { StyleSheet } from 'react-native';
+import { COLORS, SPACING, RADIUS } from '../theme/colors';
+
+export const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: SPACING.lg,
+    paddingVertical: SPACING.sm,
+  },
+  card: {
+    backgroundColor: COLORS.cardBg,
+    borderRadius: RADIUS.lg,
+    padding: SPACING.lg,
+    borderWidth: 1,
+    borderColor: COLORS.cardBorder,
+    position: 'relative',
+    overflow: 'hidden',
+  },
+  glowBorder: {
+    ...StyleSheet.absoluteFill,
+    borderRadius: RADIUS.lg,
+    borderWidth: 2,
+    borderColor: COLORS.goldPrimary,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: SPACING.sm,
+  },
+  vaultTag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  vaultIcon: {
+    fontSize: 14,
+  },
+  vaultTitle: {
+    color: COLORS.textSecondary,
+    fontSize: 11,
+    fontWeight: '700',
+    letterSpacing: 0.8,
+  },
+  apyBadge: {
+    backgroundColor: 'rgba(16, 185, 129, 0.18)',
+    paddingHorizontal: SPACING.sm + 2,
+    paddingVertical: SPACING.xs,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: 'rgba(16, 185, 129, 0.3)',
+  },
+  apyText: {
+    color: COLORS.emerald,
+    fontSize: 12,
+    fontWeight: '800',
+  },
+  balanceSection: {
+    marginVertical: SPACING.xs,
+  },
+  inrAmount: {
+    color: COLORS.textPrimary,
+    fontSize: 34,
+    fontWeight: '800',
+    letterSpacing: -1,
+  },
+  gramBadge: {
+    alignSelf: 'flex-start',
+    backgroundColor: 'rgba(255, 215, 0, 0.12)',
+    paddingHorizontal: SPACING.sm + 2,
+    paddingVertical: 3,
+    borderRadius: RADIUS.sm,
+    marginTop: 4,
+  },
+  gramText: {
+    color: COLORS.goldPrimary,
+    fontSize: 13,
+    fontWeight: '700',
+  },
+  stackContainer: {
+    marginTop: SPACING.md,
+    marginBottom: SPACING.sm,
+    backgroundColor: COLORS.cardBgLight,
+    padding: SPACING.sm + 2,
+    borderRadius: RADIUS.md,
+  },
+  stackLabel: {
+    color: COLORS.textMuted,
+    fontSize: 10,
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
+    marginBottom: 6,
+  },
+  ingotRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    gap: 6,
+  },
+  ingotBar: {
+    flex: 1,
+    height: 32,
+    borderRadius: RADIUS.sm,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  ingotActive: {
+    backgroundColor: 'rgba(255, 215, 0, 0.25)',
+    borderWidth: 1,
+    borderColor: COLORS.goldPrimary,
+  },
+  ingotInactive: {
+    backgroundColor: 'rgba(255, 255, 255, 0.04)',
+    borderWidth: 1,
+    borderColor: 'rgba(255, 255, 255, 0.08)',
+  },
+  ingotSymbol: {
+    fontSize: 12,
+  },
+  infoRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: SPACING.sm,
+    paddingTop: SPACING.xs,
+  },
+  infoCol: {
+    flex: 1,
+  },
+  infoLabel: {
+    color: COLORS.textSecondary,
+    fontSize: 11,
+    fontWeight: '500',
+  },
+  infoValueGreen: {
+    color: COLORS.emerald,
+    fontSize: 14,
+    fontWeight: '800',
+  },
+  roundupPill: {
+    backgroundColor: COLORS.cardBgLight,
+    paddingHorizontal: SPACING.sm + 2,
+    paddingVertical: SPACING.xs + 2,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.cardBorderSubtle,
+  },
+  roundupActive: {
+    borderColor: COLORS.goldPrimary,
+    backgroundColor: 'rgba(255, 215, 0, 0.1)',
+  },
+  roundupText: {
+    color: COLORS.textGold,
+    fontSize: 11,
+    fontWeight: '700',
+  },
+  actionRow: {
+    flexDirection: 'row',
+    gap: SPACING.sm,
+    marginTop: SPACING.sm,
+  },
+  stashBtnPrimary: {
+    flex: 3,
+    backgroundColor: COLORS.goldPrimary,
+    paddingVertical: SPACING.md - 2,
+    borderRadius: RADIUS.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: COLORS.goldPrimary,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 8,
+  },
+  stashBtnText: {
+    color: '#000000',
+    fontWeight: '800',
+    fontSize: 14,
+  },
+  stashBtnSecondary: {
+    flex: 1,
+    backgroundColor: COLORS.cardBgLight,
+    paddingVertical: SPACING.md - 2,
+    borderRadius: RADIUS.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 1,
+    borderColor: COLORS.cardBorderSubtle,
+  },
+  stashBtnTextSecondary: {
+    color: COLORS.textPrimary,
+    fontWeight: '700',
+    fontSize: 13,
+  },
+});

@@ -1,0 +1,210 @@
+import { StyleSheet } from 'react-native';
+import { COLORS, SPACING, RADIUS } from '../theme/colors';
+
+export const styles = StyleSheet.create({
+  container: {
+    paddingHorizontal: SPACING.lg,
+    paddingVertical: SPACING.sm,
+  },
+  card: {
+    backgroundColor: COLORS.cardBg,
+    borderRadius: RADIUS.lg,
+    padding: SPACING.lg,
+    borderWidth: 1,
+    borderColor: COLORS.cardBorder,
+  },
+  headerRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: SPACING.xs,
+  },
+  tagLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  squadIcon: {
+    fontSize: 16,
+  },
+  squadTitle: {
+    color: COLORS.limePrimary,
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 1,
+  },
+  boostPill: {
+    backgroundColor: 'rgba(134, 239, 70, 0.15)',
+    paddingHorizontal: SPACING.sm + 2,
+    paddingVertical: SPACING.xs,
+    borderRadius: RADIUS.full,
+    borderWidth: 1,
+    borderColor: COLORS.limePrimary,
+  },
+  boostText: {
+    color: COLORS.limePrimary,
+    fontSize: 11,
+    fontWeight: '800',
+  },
+  squadMetaRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginVertical: SPACING.xs,
+  },
+  squadName: {
+    color: COLORS.textPrimary,
+    fontSize: 20,
+    fontWeight: '800',
+  },
+  squadCode: {
+    color: COLORS.textSecondary,
+    fontSize: 12,
+    fontWeight: '600',
+    marginTop: 2,
+  },
+  goldPoolBadge: {
+    alignItems: 'flex-end',
+  },
+  goldPoolLabel: {
+    color: COLORS.textSecondary,
+    fontSize: 11,
+  },
+  goldPoolValue: {
+    color: COLORS.limePrimary,
+    fontSize: 18,
+    fontWeight: '800',
+  },
+  membersContainer: {
+    backgroundColor: COLORS.cardBgLight,
+    padding: SPACING.md,
+    borderRadius: RADIUS.md,
+    marginVertical: SPACING.sm,
+    borderWidth: 1,
+    borderColor: COLORS.cardBorderSubtle,
+  },
+  membersTitle: {
+    color: COLORS.textPrimary,
+    fontSize: 12,
+    fontWeight: '700',
+    marginBottom: SPACING.md,
+  },
+  avatarRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    gap: 8,
+  },
+  avatarChip: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  avatarCircle: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: 'rgba(134, 239, 70, 0.18)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 2,
+    borderColor: COLORS.limePrimary,
+    position: 'relative',
+  },
+  avatarText: {
+    color: COLORS.limePrimary,
+    fontSize: 15,
+    fontWeight: '800',
+  },
+  crown: {
+    position: 'absolute',
+    top: -10,
+    right: -4,
+    fontSize: 14,
+  },
+  memberName: {
+    color: COLORS.textPrimary,
+    fontSize: 12,
+    fontWeight: '700',
+    marginTop: 6,
+    textAlign: 'center',
+  },
+  memberGold: {
+    color: COLORS.limeSecondary,
+    fontSize: 11,
+    fontWeight: '700',
+    marginTop: 2,
+  },
+  addMemberChip: {
+    alignItems: 'center',
+    flex: 1,
+  },
+  addCircle: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    borderWidth: 2,
+    borderColor: COLORS.limePrimary,
+    borderStyle: 'dashed',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(134, 239, 70, 0.08)',
+  },
+  addPlus: {
+    color: COLORS.limePrimary,
+    fontSize: 24,
+    fontWeight: '800',
+  },
+  addText: {
+    color: COLORS.limePrimary,
+    fontSize: 12,
+    fontWeight: '700',
+    marginTop: 6,
+  },
+  tierSection: {
+    marginTop: SPACING.xs,
+    marginBottom: SPACING.sm,
+  },
+  tierHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginBottom: 6,
+  },
+  tierLabel: {
+    color: COLORS.textSecondary,
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  tierPct: {
+    color: COLORS.limePrimary,
+    fontSize: 11,
+    fontWeight: '800',
+  },
+  progressBarBg: {
+    height: 8,
+    backgroundColor: 'rgba(255, 255, 255, 0.1)',
+    borderRadius: RADIUS.full,
+    overflow: 'hidden',
+  },
+  progressBarFill: {
+    height: '100%',
+    backgroundColor: COLORS.limePrimary,
+    borderRadius: RADIUS.full,
+  },
+  progressSub: {
+    color: COLORS.textSecondary,
+    fontSize: 11,
+    marginTop: 4,
+    textAlign: 'right',
+  },
+  inviteBtn: {
+    backgroundColor: COLORS.limePrimary,
+    paddingVertical: SPACING.md - 2,
+    borderRadius: RADIUS.md,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  inviteBtnText: {
+    color: COLORS.textDark,
+    fontWeight: '800',
+    fontSize: 13,
+  },
+});
